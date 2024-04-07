@@ -12,8 +12,12 @@ In my free time I like reading about history and economics :)
 
 The main objective of this project is to train a set of models for supervised classification of spontaneous and stimulated neural states in mice.
 
+Methods & Tools<br>
+- *Python, Scikit-Learn, PyTorch*<br>
+- PCA, Naive Bayes Classifier, KNN Classifier, Logistic Regression, Deep Neural Networks 
 
-[Project 1 Title](/sample_page)
+
+[Github Repository](https://github.com/NonAbelianCapu/Supervised_classification_neural_states)
 <img src="images/supervised_classification_mice.png?raw=true"/>
 
 
