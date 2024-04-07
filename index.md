@@ -1,5 +1,6 @@
-## My interests 
+## About me 
 ---
+I hold a Licenciate in Physics (equivalent to Bachelor + Masters),  with my main experience lying in the application of  computational tools for modeling and predicting the behavior of complex systems.
 
 Right now my main interest lies in the application of data driven methods to make interpretable models of physical systems and systems in general. I also enjoy doing data science and data analysis in general. 
 
