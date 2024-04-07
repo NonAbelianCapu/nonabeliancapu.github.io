@@ -1,31 +1,20 @@
-## Portfolio
-
+## My interests 
 ---
 
-### Category Name 1 
+Right now my main interest lies in the application of data driven methods to make interpretable models of physical systems and systems in general. I also enjoy doing data science and data analysis in general. 
+
+In my free time I like reading about history and economics :) 
+
+## Projects
+---
+
+### Supervised Classification of neural states in mice
+
+The main objective of this project is to train a set of models for supervised classification of spontaneous and stimulated neural states in mice.
+
 
 [Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
-
----
-
-### Category Name 2
-
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/)
-
----
+<img src="images/supervised_classification_mice.png?raw=true"/>
 
 
 
