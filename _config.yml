@@ -1,11 +1,11 @@
-title: John Doe # your name (or website title) here
+title: Agustín Caputo Bugallo # your name (or website title) here
 logo: "/images/logo.png?raw=true" # your photo (or logo) here
 description: > # your text below (remove <br> elements if you don't need line breaks)
-  First description 
+  I hold a Licenciate in Physics (equivalent to Bachelor + Masters), with my main experience lying in the application of 
+  computational tools for modeling and predicting the behavior of complex systems.
   <br><br>
-  Second description 
   <br><br>
-  <a href="https://www.linkedin.com/in/example/">View My LinkedIn Profile</a> 
+  <a href="https://www.linkedin.com/in/agustin-caputo-bugallo-280576201/">View My LinkedIn Profile</a> 
   
 remote_theme: pages-themes/minimal@v0.2.0
 plugins:
