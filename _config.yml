@@ -19,7 +19,7 @@ title: NonAbelianCapu # the main title
 tagline: Physics, Coding & Mathematical Explorations # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Lic. in Physics specializing in computational modeling, data science, and complex systems. Exploration of physical and mathematical phenomena through a data-driven lens.
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -40,9 +40,8 @@ social:
     # The first element serves as the copyright owner's link
     - https://github.com/NonAbelianCapu # change to your github homepage
     - https://twitter.com/NonAbelianCapu # change to your twitter homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/agustin-caputo-bugallo-280576201/ # LinkedIn Profile
+    - https://drive.google.com/file/d/1YyUKpeFN_ecMdYpgP-r_YkZuhi7zPIbV/view?usp=sharing # CV Link
 
 google_site_verification: # fill in to your verification string
 
@@ -73,7 +72,7 @@ theme_mode: dark # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://pbs.twimg.com/profile_images/1745075685037662208/D872j05U_400x400.jpg
+avatar: /assets/img/avatar.png
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

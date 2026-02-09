@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 300" role="img" aria-labelledby="title desc">
+  <title id="title">CID-APER Product Re-ranking</title>
+  <desc id="desc">Abstract banner representing product ranking reordered by machine learning signals.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f3f6f4"/>
+      <stop offset="100%" stop-color="#dfe9e4"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#264b3f"/>
+      <stop offset="100%" stop-color="#3f7e68"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="300" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1400" height="8" fill="url(#accent)"/>
+
+  <text x="72" y="72" font-family="IBM Plex Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#163126">
+    CID-APER Product Re-ranking
+  </text>
+  <text x="72" y="108" font-family="IBM Plex Mono, monospace" font-size="18" fill="#2f5a4d">
+    NLP + ML signals to improve ordering quality
+  </text>
+
+  <text x="84" y="144" font-family="IBM Plex Mono, monospace" font-size="14" fill="#4b5a54">before</text>
+  <text x="798" y="144" font-family="IBM Plex Mono, monospace" font-size="14" fill="#4b5a54">after (re-ranked)</text>
+
+  <g filter="url(#softShadow)">
+    <rect x="84" y="160" width="260" height="40" rx="8" fill="#ffffff" stroke="#cfd8d3"/>
+    <rect x="84" y="212" width="260" height="40" rx="8" fill="#ffffff" stroke="#cfd8d3"/>
+    <rect x="84" y="264" width="260" height="28" rx="8" fill="#ffffff" stroke="#cfd8d3"/>
+
+    <rect x="798" y="160" width="260" height="40" rx="8" fill="#ffffff" stroke="#adc6bb"/>
+    <rect x="798" y="212" width="260" height="40" rx="8" fill="#ffffff" stroke="#adc6bb"/>
+    <rect x="798" y="264" width="260" height="28" rx="8" fill="#ffffff" stroke="#adc6bb"/>
+  </g>
+
+  <text x="102" y="185" font-family="IBM Plex Mono, monospace" font-size="16" fill="#4f5b56">#1 Product A</text>
+  <text x="102" y="237" font-family="IBM Plex Mono, monospace" font-size="16" fill="#4f5b56">#2 Product C</text>
+  <text x="102" y="283" font-family="IBM Plex Mono, monospace" font-size="15" fill="#4f5b56">#3 Product B</text>
+
+  <text x="816" y="185" font-family="IBM Plex Mono, monospace" font-size="16" font-weight="700" fill="#1f4d3f">#1 Product B</text>
+  <text x="816" y="237" font-family="IBM Plex Mono, monospace" font-size="16" fill="#1f4d3f">#2 Product A</text>
+  <text x="816" y="283" font-family="IBM Plex Mono, monospace" font-size="15" fill="#1f4d3f">#3 Product C</text>
+
+  <g stroke="#264b3f" stroke-width="3" fill="none">
+    <path d="M356 178 C500 178, 620 178, 786 178"/>
+    <path d="M356 230 C500 220, 620 196, 786 230"/>
+    <path d="M356 278 C500 292, 620 252, 786 278"/>
+  </g>
+  <g fill="#264b3f">
+    <polygon points="786,178 772,171 772,185"/>
+    <polygon points="786,230 772,223 772,237"/>
+    <polygon points="786,278 772,271 772,285"/>
+  </g>
+
+  <g>
+    <rect x="1088" y="154" width="252" height="126" rx="12" fill="#ffffff" stroke="#c6d4ce"/>
+    <text x="1112" y="184" font-family="IBM Plex Mono, monospace" font-size="14" fill="#4f5b56">signals</text>
+    <rect x="1112" y="194" width="182" height="10" rx="5" fill="#dbe9e3"/>
+    <rect x="1112" y="212" width="146" height="10" rx="5" fill="#dbe9e3"/>
+    <rect x="1112" y="230" width="200" height="10" rx="5" fill="#dbe9e3"/>
+    <rect x="1112" y="248" width="170" height="10" rx="5" fill="#dbe9e3"/>
+    <text x="1264" y="278" font-family="IBM Plex Mono, monospace" font-size="13" fill="#264b3f">ML</text>
+  </g>
+</svg>

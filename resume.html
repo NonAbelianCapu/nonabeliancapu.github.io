@@ -1,0 +1,201 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ site.title | escape }} | Resume</title>
+    <meta name="description" content="Academic and research CV of {{ site.data.portfolio.name }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}" />
+  </head>
+  <body class="resume-page">
+    {% assign p = site.data.portfolio %}
+    {% assign r = site.data.resume %}
+
+    <nav class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="{{ '/index.html#top' | relative_url }}">{{ p.name }}</a>
+        <ul class="menu">
+          <li><a href="{{ '/index.html#about' | relative_url }}">About</a></li>
+          <li><a href="{{ '/index.html#projects' | relative_url }}">Project Log</a></li>
+          <li><a href="{{ '/index.html#research' | relative_url }}">Research</a></li>
+          <li><a href="{{ '/resume.html' | relative_url }}" class="is-active">Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="page-shell">
+      <header class="resume-header">
+        <h1>Curriculum Vitae</h1>
+        <p class="eyebrow">{{ p.name }} | {{ p.role }}</p>
+        <p>{{ p.email }}</p>
+      </header>
+
+      <section class="resume-section" id="education">
+        <h2>Education</h2>
+        {% for item in r.education %}
+          <article class="resume-entry">
+            <div class="resume-headline">
+              <h3>{{ item.degree }}</h3>
+              <span class="resume-period">{{ item.period }}</span>
+            </div>
+            <span class="resume-subline">{{ item.institution }}</span>
+            <ul>
+              {% for note in item.notes %}
+                <li>{{ note }}</li>
+              {% endfor %}
+            </ul>
+          </article>
+        {% endfor %}
+      </section>
+
+      <section class="resume-section" id="research-experience">
+        <h2>Research Experience</h2>
+        <div class="timeline">
+          {% for item in r.research_experience %}
+            <article class="resume-entry">
+              <div class="resume-headline">
+                <h3>{{ item.role }}</h3>
+                <span class="resume-period">{{ item.period }}</span>
+              </div>
+              <span class="resume-subline">{{ item.institution }} | {{ item.location }}</span>
+              <ul>
+                {% for bullet in item.bullets %}
+                  <li>{{ bullet }}</li>
+                {% endfor %}
+              </ul>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="resume-section" id="industry">
+        <h2>Industry Experience</h2>
+        <div class="timeline">
+          {% for item in r.industry_experience %}
+            <article class="resume-entry">
+              <div class="resume-headline">
+                <h3>{{ item.role }}</h3>
+                <span class="resume-period">{{ item.period }}</span>
+              </div>
+              <span class="resume-subline">{{ item.institution }} | {{ item.location }}</span>
+              <ul>
+                {% for bullet in item.bullets %}
+                  <li>{{ bullet }}</li>
+                {% endfor %}
+              </ul>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+
+      {% if r.publications and r.publications.size > 0 %}
+      <section class="resume-section" id="publications">
+        <h2>Publications</h2>
+        {% for item in r.publications %}
+          <article class="resume-entry">
+            <div class="resume-headline">
+              <h3>{{ item.year }}</h3>
+            </div>
+            <p>{{ item.citation }}</p>
+            <span class="resume-subline">{{ item.venue }}</span>
+          </article>
+        {% endfor %}
+      </section>
+      {% endif %}
+
+      {% if r.funded_projects_and_grants and r.funded_projects_and_grants.size > 0 %}
+      <section class="resume-section" id="grants">
+        <h2>Funded Projects and Grants</h2>
+        {% for item in r.funded_projects_and_grants %}
+          <article class="resume-entry">
+            <div class="resume-headline">
+              <h3>{{ item.title }}</h3>
+              <span class="resume-period">{{ item.period }}</span>
+            </div>
+            <p>{{ item.details }}</p>
+          </article>
+        {% endfor %}
+      </section>
+      {% endif %}
+
+      <section class="resume-section" id="teaching">
+        <h2>Teaching and Service</h2>
+        {% for item in r.teaching_and_service %}
+          <article class="resume-entry">
+            <div class="resume-headline">
+              <h3>{{ item.role }}</h3>
+              <span class="resume-period">{{ item.period }}</span>
+            </div>
+            <span class="resume-subline">{{ item.institution }}</span>
+            <ul>
+              {% for bullet in item.bullets %}
+                <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          </article>
+        {% endfor %}
+      </section>
+
+      <section class="resume-section" id="courses">
+        <h2>Courses and Schools</h2>
+        {% for item in r.courses_and_schools %}
+          <article class="resume-entry">
+            <div class="resume-headline">
+              <h3>{{ item.title }}</h3>
+              <span class="resume-period">{{ item.period }}</span>
+            </div>
+            <span class="resume-subline">{{ item.host }} | {{ item.duration }}</span>
+          </article>
+        {% endfor %}
+      </section>
+
+      <section class="resume-section" id="conferences">
+        <h2>Conferences and Scientific Meetings</h2>
+        {% for item in r.conferences %}
+          <article class="resume-entry">
+            <div class="resume-headline">
+              <h3>{{ item.title }}</h3>
+              <span class="resume-period">{{ item.period }}</span>
+            </div>
+            <span class="resume-subline">{{ item.type }} | {{ item.venue }}</span>
+          </article>
+        {% endfor %}
+      </section>
+
+      {% if r.awards and r.awards.size > 0 %}
+      <section class="resume-section" id="awards">
+        <h2>Awards</h2>
+        {% for item in r.awards %}
+          <article class="resume-entry">
+            <div class="resume-headline">
+              <h3>{{ item.title }}</h3>
+              <span class="resume-period">{{ item.period }}</span>
+            </div>
+            <p>{{ item.details }}</p>
+          </article>
+        {% endfor %}
+      </section>
+      {% endif %}
+
+      <section class="resume-section" id="languages">
+        <h2>Languages</h2>
+        <div class="chip-list">
+          {% for language in r.languages %}
+            <span class="chip">{{ language.name }} - {{ language.level }}</span>
+          {% endfor %}
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <p>{{ 'now' | date: '%Y' }} {{ p.name }}</p>
+        <p>Resume page generated with Jekyll data files.</p>
+      </footer>
+    </main>
+  </body>
+</html>

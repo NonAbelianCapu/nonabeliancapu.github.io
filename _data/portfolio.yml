@@ -1,0 +1,30 @@
+name: Agustin Caputo Bugallo
+role: PhD Student in Computer Science (UBA - CONICET)
+email: abugallo@dc.uba.ar
+avatar: /avatar.jpg
+location: Buenos Aires, Argentina
+summary:
+  - Researcher and data scientist focused on computational modeling for socio-economic systems, agent-based simulation, machine learning, and robust optimization.
+  - I work at the intersection of formal modeling, simulation validation, and data-driven inference for complex adaptive systems.
+
+links:
+  - label: Email
+    url: mailto:abugallo@dc.uba.ar
+  - label: GitHub
+    url: https://github.com/NonAbelianCapu
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/agustin-caputo-bugallo-280576201/
+  - label: X
+    url: https://x.com/agustin_caputo
+
+research:
+  - title: PhD Fellow Research (CONICET - ICC, UBA)
+    institution: University of Buenos Aires
+    period: August 2024 - Present
+    focus: Formal languages and simulation tools for agent control in socio-economic systems.
+    highlights:
+      - "Thesis: Validacion mediante simulacion para modelos hibridos complejos: aplicacion al control de agentes moviles en red."
+      - "Advisor: Rodrigo Castro. Co-advisor: Sebastian Uchitel."
+      - "Current lines: nowcasting with mixed-frequency data and calibration of agent-based models."
+
+footer: Built with Jekyll and custom data-driven templates.

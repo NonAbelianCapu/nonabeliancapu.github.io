@@ -1,0 +1,170 @@
+education:
+  - degree: PhD in Computer Science (in progress)
+    institution: University of Buenos Aires
+    period: Aug 2024 - Present
+    notes:
+      - "Thesis (current CONICET title): Validacion mediante simulacion para modelos hibridos complejos: aplicacion al control de agentes moviles en red."
+      - "Advisor: Rodrigo Castro. Co-advisor: Sebastian Uchitel."
+
+  - degree: Lic. in Physics
+    institution: Universidad Nacional de La Plata
+    period: Mar 2016 - Nov 2023
+    notes:
+      - "GPA: 9.40/10."
+      - "Thesis: Characterization of neuronal systems using short-time statistics."
+      - "Advisor: Tomas Grigera."
+
+research_experience:
+  - role: PhD Fellow (CONICET - ICC, UBA)
+    institution: University of Buenos Aires
+    location: Buenos Aires, Argentina
+    period: Aug 2024 - Present
+    bullets:
+      - Formal languages and simulation tools for agent control in socio-economic systems.
+      - Nowcasting with mixed-frequency data.
+      - Calibration of agent-based models, including CMA-ES.
+
+  - role: Research Initiation Fellowship (CIN)
+    institution: Research fellowship program
+    location: Argentina
+    period: Sep 2023 - Dec 2023
+    bullets:
+      - Critical dynamics and correlation scales in simple neural-network models.
+
+  - role: Research Assistant (CEMSC3, UNSAM)
+    institution: National University of San Martin
+    location: Buenos Aires, Argentina
+    period: Mar 2022 - Aug 2023
+    bullets:
+      - Neuronal dynamics data analysis for NIH-related work.
+      - Dimensionality reduction and predictive modeling workflows.
+
+industry_experience:
+  - role: Pulso PBA (for BAPRO State Bank)
+    institution: Banco de la Provincia de Buenos Aires (BAPRO)
+    location: Buenos Aires, Argentina
+    period: Aug 2025 - Jan 2026
+    bullets:
+      - AI-based weekly indicator of economic activity.
+      - Integration of high-frequency banking signals and official economic data.
+
+  - role: Data Scientist (CID - APER)
+    institution: Interinstitutional Center for Data Science + APER
+    location: Buenos Aires, Argentina
+    period: Mar 2024 - Aug 2024
+    bullets:
+      - Product re-ranking service for online stores.
+      - NLP + ML signals combined with traditional ranking methods.
+
+teaching_and_service:
+  - role: JTP-equivalent Teaching Support
+    institution: FCEN-UBA
+    period: Mar 2024 - Jul 2024
+    bullets:
+      - Notebook infrastructure and computational modeling material for Simulations of Economic Models.
+
+  - role: Undergraduate Teaching Assistant - Physics II
+    institution: Engineering School, UNLP
+    period: Oct 2022 - May 2024
+    bullets:
+      - Teaching support in introductory electromagnetism.
+
+  - role: Undergraduate Teaching Assistant - Experimental Physics I and IV
+    institution: Exact Sciences, UNLP
+    period: Mar 2022 - Mar 2024
+    bullets:
+      - Laboratory support and applied experimental methods.
+
+  - role: Institutional Service
+    institution: Universidad Nacional de La Plata
+    period: 2020 - 2023
+    bullets:
+      - Student member in professor-position advisory committee (2023).
+      - Member, curriculum-change committee (Physics, 2020 - 2022).
+
+funded_projects_and_grants:
+  - period: Jan 2025
+    title: YSI funding
+    details: Funding for participation in workshop at Scuola Superiore Sant'Anna (Pisa).
+
+  - period: Jan 2023
+    title: LACONEU support
+    details: Funding for participation in the Latin American Summer School in Computational Neuroscience.
+
+publications:
+  - year: 2025
+    citation: "Carreira-Munich, T.; Caputo Bugallo, A.; Szabo, C.; Castro, R. Complex Adaptive Systems Simulation Modeling: A Decade's Overview."
+    venue: "Simulation: Transactions of the Society for Modeling and Simulation International (in press)"
+
+conferences:
+  - period: Oct 2025
+    type: Talk
+    title: "Emergent wage Phillips curve in networks with local memory: an agent-based approach"
+    venue: Workshop Interdisciplinario en Econometria y Redes Complejas (IIEP-UBA-CONICET), Buenos Aires
+
+  - period: Aug 2025
+    type: Short Talk
+    title: Clasificacion no supervisada y explicabilidad de propiedades emergentes en modelos de simulacion basados en agentes
+    venue: 7mo Encuentro del Dia de la Investigacion en Ciencias de la Computacion, UBA
+
+  - period: Aug 2025
+    type: Poster
+    title: Unsupervised Classification and Explainability of Agent Based Simulation Models
+    venue: 7mo Encuentro del Dia de la Investigacion en Ciencias de la Computacion, UBA
+
+  - period: Aug 2025
+    type: Poster
+    title: "United We Stand: The Role of Information Locality in Collective Wage Bargaining via Agent-Based Models"
+    venue: 38a Escuela de Ciencias Informaticas (ECI), UBA
+
+  - period: Jan 2025
+    type: Talk + Abstract
+    title: "United we Stand: The role of information locality in collective wage bargaining via Agent Based models"
+    venue: Agent Based Models for Political Economy workshop, Scuola Superiore Sant'Anna, Pisa
+
+  - period: May 2023
+    type: Poster
+    title: Caracterizacion de correlaciones espaciales mediante estadisticas de tiempos cortos
+    venue: TREFEMAC
+
+courses_and_schools:
+  - title: Modeling and Analysis of Complex Systems
+    host: ICC-UBA
+    period: Jul 2024
+    duration: Course
+
+  - title: Simulations of Economic Models
+    host: ICC-UBA
+    period: Mar - Jul 2024
+    duration: Course
+
+  - title: Latin American Summer School in Computational Neuroscience (LACONEU)
+    host: LACONEU
+    period: Jan 2023
+    duration: Summer School
+
+  - title: Agent-Based Modelling and Simulation for Macroeconomic Systems
+    host: ECI
+    period: Jul 2022
+    duration: Course
+
+  - title: Introduction to Neural Networks in Python
+    host: Training course
+    period: May 2022
+    duration: Course
+
+  - title: Social Network Analysis - Computational Socio-economics Track
+    host: ECI
+    period: Jul 2021
+    duration: Course
+
+awards:
+  - period: 2024
+    title: Distincion Joaquin V. Gonzalez
+    details: Municipality of La Plata; awarded among top graduates from each faculty.
+
+languages:
+  - name: Spanish
+    level: Native
+  - name: English
+    level: Advanced (B2, First Certificate)
