@@ -10,7 +10,11 @@ I am a PhD student in Computer Science at the University of Buenos Aires (UBA) a
 
 My work focuses on computational modeling for socio-economic systems, agent-based simulation, machine learning, and model validation. Current research lines include mixed-frequency nowcasting and calibration of complex simulation models.
 
+Right now my main interest lies in the application of data-driven methods to build interpretable models of physical systems and complex systems in general. I also enjoy doing data science and data analysis more broadly.
+
 I am also interested in technology transfer projects where applied AI and data science methods can support decision-making workflows.
+
+In my free time I like reading about history and economics.
 
 Email: abugallo@dc.uba.ar
 
