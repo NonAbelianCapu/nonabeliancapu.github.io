@@ -16,6 +16,8 @@ links:
     url: https://www.linkedin.com/in/agustin-caputo-bugallo-280576201/
   - label: X
     url: https://x.com/agustin_caputo
+  - label: SEDLab
+    url: https://sedlab.dc.uba.ar/
 
 research:
   - title: PhD Fellow Research (CONICET - ICC, UBA)
@@ -23,8 +25,9 @@ research:
     period: August 2024 - Present
     focus: Formal languages and simulation tools for agent control in socio-economic systems.
     highlights:
-      - "Thesis: Validacion mediante simulacion para modelos hibridos complejos: aplicacion al control de agentes moviles en red."
+      - "I am part of SEDLab (Discrete Event Simulation Laboratory): https://sedlab.dc.uba.ar/."
+      - "Thesis: Simulation-based validation for complex hybrid models: an application to controlling mobile agents in networks."
       - "Advisor: Rodrigo Castro. Co-advisor: Sebastian Uchitel."
-      - "Current lines: nowcasting with mixed-frequency data and calibration of agent-based models."
+      - "Current research lines: nowcasting with mixed-frequency data and calibration of agent-based models."
 
 footer: Built with Jekyll and custom data-driven templates.
