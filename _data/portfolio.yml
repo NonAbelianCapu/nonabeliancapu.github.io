@@ -4,6 +4,7 @@ email: abugallo@dc.uba.ar
 avatar: /avatar.jpg
 location: Buenos Aires, Argentina
 summary:
+  - I am part of <a href="https://sedlab.dc.uba.ar/" target="_blank" rel="noreferrer">SEDLab (Discrete Event Simulation Laboratory)</a>.
   - Researcher and data scientist focused on computational modeling for socio-economic systems, agent-based simulation, machine learning, and robust optimization.
   - I work at the intersection of formal modeling, simulation validation, and data-driven inference for complex adaptive systems.
 
