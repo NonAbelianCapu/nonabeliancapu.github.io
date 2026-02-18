@@ -476,10 +476,19 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
+.posts-grid-compact {
+  gap: 0.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+}
+
 .post-card {
   border: 1px solid #e3e3e3;
   background: #fff;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-card-compact {
+  max-width: 340px;
 }
 
 .post-card:hover {
@@ -491,8 +500,16 @@ a {
   aspect-ratio: 16 / 9;
 }
 
+.post-card-compact .project-media {
+  aspect-ratio: 16 / 10;
+}
+
 .post-card-body {
   padding: 0.9rem;
+}
+
+.post-card-compact .post-card-body {
+  padding: 0.72rem;
 }
 
 .post-card-title {
@@ -503,9 +520,18 @@ a {
   margin-bottom: 0.45rem;
 }
 
+.post-card-compact .post-card-title {
+  font-size: 0.95rem;
+}
+
 .post-card-excerpt {
   font-size: 0.9rem;
   color: #333;
+}
+
+.post-card-compact .post-card-excerpt {
+  font-size: 0.8rem;
+  line-height: 1.32;
 }
 
 /* Resume */
