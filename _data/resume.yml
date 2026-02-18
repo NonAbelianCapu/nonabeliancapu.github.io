@@ -107,11 +107,6 @@ conferences:
     venue: Workshop Interdisciplinario en Econometria y Redes Complejas (IIEP-UBA-CONICET), Buenos Aires
 
   - period: Aug 2025
-    type: Short Talk
-    title: Clasificacion no supervisada y explicabilidad de propiedades emergentes en modelos de simulacion basados en agentes
-    venue: 7mo Encuentro del Dia de la Investigacion en Ciencias de la Computacion, UBA
-
-  - period: Aug 2025
     type: Poster
     title: Unsupervised Classification and Explainability of Agent Based Simulation Models
     venue: 7mo Encuentro del Dia de la Investigacion en Ciencias de la Computacion, UBA
@@ -125,11 +120,6 @@ conferences:
     type: Talk + Abstract
     title: "United we Stand: The role of information locality in collective wage bargaining via Agent Based models"
     venue: Agent Based Models for Political Economy workshop, Scuola Superiore Sant'Anna, Pisa
-
-  - period: May 2023
-    type: Poster
-    title: Caracterizacion de correlaciones espaciales mediante estadisticas de tiempos cortos
-    venue: TREFEMAC
 
 courses_and_schools:
   - title: Modeling and Analysis of Complex Systems
