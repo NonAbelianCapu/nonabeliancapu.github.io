@@ -45,6 +45,10 @@ Researcher and data scientist focused on computational modeling for socio-econom
 - **Funding for LACONEU Summer School**, Jan 2023.
 
 ## Publications
+- Kejsefman, Igal; Valens Upegui, M.; Caputo Bugallo, A.; Castro, R. (2026).  
+  *Nowcasting de la actividad económica en contextos de alta volatilidad: uso de transacciones bancarias para la gestión económica provincial basada en evidencia*.  
+  *Submitted / under review (peer review in progress).*
+
 - Carreira-Munich, T.; Caputo Bugallo, A.; Szabo, C.; Castro, R. (2025).  
   *Complex Adaptive Systems Simulation Modeling: A Decade's Overview*.  
   *Simulation: Transactions of the Society for Modeling and Simulation International* (in press).

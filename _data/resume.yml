@@ -92,6 +92,10 @@ funded_projects_and_grants:
     details: Funding for participation in the Latin American Summer School in Computational Neuroscience.
 
 publications:
+  - year: 2026
+    citation: "Kejsefman, I.; Valens Upegui, M.; Caputo Bugallo, A.; Castro, R. Nowcasting de la actividad económica en contextos de alta volatilidad: uso de transacciones bancarias para la gestión económica provincial basada en evidencia."
+    venue: "Submitted / under review (peer review in progress)"
+
   - year: 2025
     citation: "Carreira-Munich, T.; Caputo Bugallo, A.; Szabo, C.; Castro, R. Complex Adaptive Systems Simulation Modeling: A Decade's Overview."
     venue: "Simulation: Transactions of the Society for Modeling and Simulation International (in press)"
