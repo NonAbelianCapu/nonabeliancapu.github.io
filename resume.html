@@ -1,39 +1,49 @@
 ---
 layout: null
 ---
+{% assign p = site.data.portfolio %}
+{% assign r = site.data.resume %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ site.title | escape }} | Resume</title>
-    <meta name="description" content="Academic and research CV of {{ site.data.portfolio.name }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>{{ p.name }} | CV</title>
+    <meta name="description" content="Academic CV of {{ p.name }}: education, research, publications, talks and teaching." />
+    <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}" />
   </head>
   <body class="resume-page">
-    {% assign p = site.data.portfolio %}
-    {% assign r = site.data.resume %}
 
-    <nav class="topbar">
+    <nav class="topbar" aria-label="Main">
       <div class="topbar-inner">
         <a class="brand" href="{{ '/index.html#top' | relative_url }}">{{ p.name }}</a>
         <ul class="menu">
-          <li><a href="{{ '/index.html#about' | relative_url }}">About</a></li>
-          <li><a href="{{ '/index.html#projects' | relative_url }}">Project Log</a></li>
+          <li><a href="{{ '/index.html#news' | relative_url }}">Recent Activity</a></li>
           <li><a href="{{ '/index.html#research' | relative_url }}">Research</a></li>
-          <li><a href="{{ '/resume.html' | relative_url }}" class="is-active">Resume</a></li>
+          <li><a href="{{ '/index.html#papers' | relative_url }}">Papers</a></li>
+          <li><a href="{{ '/index.html#projects' | relative_url }}">Projects</a></li>
+          <li><a href="{{ '/resume.html' | relative_url }}" class="is-active">CV</a></li>
         </ul>
       </div>
     </nav>
 
     <main class="page-shell">
       <header class="resume-header">
-        <h1>Curriculum Vitae</h1>
-        <p class="eyebrow">{{ p.name }} | {{ p.role }}</p>
-        <p>{{ p.email }}</p>
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1>{{ p.name }}</h1>
+        <p class="hero-meta">{{ p.role }} · {{ p.email }}</p>
+        {% if p.cv_pdf %}
+        <div class="quick-links">
+          <a class="is-primary" href="{{ p.cv_pdf | relative_url }}" target="_blank" rel="noreferrer">Download PDF</a>
+        </div>
+        {% endif %}
+        <div class="sim-band">
+          <canvas id="cv-sim" data-sim data-cell="7" role="img" aria-label="Animated strip of agents forming spiral waves"></canvas>
+        </div>
       </header>
 
       <section class="resume-section" id="education">
@@ -97,15 +107,20 @@ layout: null
       {% if r.publications and r.publications.size > 0 %}
       <section class="resume-section" id="publications">
         <h2>Publications</h2>
-        {% for item in r.publications %}
-          <article class="resume-entry">
-            <div class="resume-headline">
-              <h3>{{ item.year }}</h3>
-            </div>
-            <p>{{ item.citation }}</p>
-            <span class="resume-subline">{{ item.venue }}</span>
-          </article>
-        {% endfor %}
+        <ol class="paper-list">
+          {% for item in r.publications %}
+            {% assign status = item.status | downcase %}
+            <li class="paper">
+              <div class="paper-tags">
+                <span class="chip">{{ item.kind }}</span>
+                {% if item.status %}<span class="pill{% if status contains 'soon' %} is-pending{% endif %}">{{ item.status }}</span>{% endif %}
+                <span class="paper-year">{{ item.year }}</span>
+              </div>
+              <p class="paper-cite">{{ item.citation }}</p>
+              <p class="paper-venue"><em>{{ item.venue }}</em>{% if item.url %} · <a href="{{ item.url }}" target="_blank" rel="noreferrer">{{ item.url_label | default: 'Paper' }}</a>{% endif %}</p>
+            </li>
+          {% endfor %}
+        </ol>
       </section>
       {% endif %}
 
@@ -133,11 +148,13 @@ layout: null
               <span class="resume-period">{{ item.period }}</span>
             </div>
             <span class="resume-subline">{{ item.institution }}</span>
+            {% if item.bullets %}
             <ul>
               {% for bullet in item.bullets %}
                 <li>{{ bullet }}</li>
               {% endfor %}
             </ul>
+            {% endif %}
           </article>
         {% endfor %}
       </section>
@@ -193,9 +210,10 @@ layout: null
       </section>
 
       <footer class="site-footer">
-        <p>{{ 'now' | date: '%Y' }} {{ p.name }}</p>
-        <p>Resume page generated with Jekyll data files.</p>
+        <p>© {{ 'now' | date: '%Y' }} {{ p.name }}</p>
+        <p>Last updated {{ site.time | date: '%b %Y' }}</p>
       </footer>
     </main>
+    <script src="{{ '/assets/js/agents.js' | relative_url }}" defer></script>
   </body>
 </html>

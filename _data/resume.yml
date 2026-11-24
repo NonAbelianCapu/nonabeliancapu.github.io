@@ -3,162 +3,217 @@ education:
     institution: University of Buenos Aires
     period: Aug 2024 - Present
     notes:
-      - "Thesis (current CONICET title): Validacion mediante simulacion para modelos hibridos complejos: aplicacion al control de agentes moviles en red."
-      - "Advisor: Rodrigo Castro. Co-advisor: Sebastian Uchitel."
+      - "Thesis: Simulation-based validation of complex hybrid models, with application to the control of networked agents in socio-economic systems."
+      - "Advisor: Rodrigo Castro. Co-advisor: Sebastián Uchitel."
 
-  - degree: Lic. in Physics
-    institution: Universidad Nacional de La Plata
+  - degree: Licenciatura in Physics (five-year degree)
+    institution: National University of La Plata
     period: Mar 2016 - Nov 2023
     notes:
       - "GPA: 9.40/10."
-      - "Thesis: Characterization of neuronal systems using short-time statistics."
-      - "Advisor: Tomas Grigera."
+      - "Thesis: Characterization of Neuronal Systems Using Short-Time Statistics. Advisor: Tomás Grigera."
 
 research_experience:
-  - role: PhD Fellow (CONICET - ICC, UBA)
-    institution: University of Buenos Aires
+  - role: CONICET Doctoral Fellow
+    institution: Institute of Computer Science (ICC, UBA-CONICET), SEDLab
     location: Buenos Aires, Argentina
     period: Aug 2024 - Present
     bullets:
-      - Formal languages and simulation tools for agent control in socio-economic systems.
-      - Nowcasting with mixed-frequency data.
-      - Calibration of agent-based models, including CMA-ES.
+      - Machine learning methods to build interpretable surrogate models of agent-based simulations.
+      - Calibration of agent-based models with noise-robust black-box optimization.
+      - Nowcasting of weekly economic indicators with machine learning on mixed-frequency data.
 
-  - role: Research Initiation Fellowship (CIN)
-    institution: Research fellowship program
-    location: Argentina
+  - role: Undergraduate Research Fellow (CIN)
+    institution: CIN scientific vocation fellowship, National University of La Plata
+    location: La Plata, Argentina
     period: Sep 2023 - Dec 2023
     bullets:
-      - Critical dynamics and correlation scales in simple neural-network models.
+      - Critical dynamics and correlation scales in simple models of neural networks.
 
-  - role: Research Assistant (CEMSC3, UNSAM)
-    institution: National University of San Martin
+  - role: Research Assistant (CEMSC3)
+    institution: National University of San Martín
     location: Buenos Aires, Argentina
     period: Mar 2022 - Aug 2023
     bullets:
-      - Neuronal dynamics data analysis for NIH-related work.
-      - Dimensionality reduction and predictive modeling workflows.
+      - "Data analysis for the NIH project Reading and Controlling the Neural Codes of the Brain: dimensionality reduction and machine learning on neural recordings."
+      - Metrics comparing agent-based models with experimental data through spatial and temporal correlations.
 
 industry_experience:
-  - role: Pulso PBA (for BAPRO State Bank)
-    institution: Banco de la Provincia de Buenos Aires (BAPRO)
+  - role: Data Scientist (technology transfer)
+    institution: Banco de la Provincia de Buenos Aires, with ICC (UBA-CONICET)
     location: Buenos Aires, Argentina
-    period: Aug 2025 - Jan 2026
+    period: Aug 2025 - Present
     bullets:
-      - AI-based weekly indicator of economic activity.
-      - Integration of high-frequency banking signals and official economic data.
+      - Built and maintain PulsoPBA, the bank's AI-based indicator of economic activity in the Province of Buenos Aires, published monthly.
+      - Combines more than 1,200 daily banking variables with official statistics; currently being extended to sector-level indicators.
 
-  - role: Data Scientist (CID - APER)
-    institution: Interinstitutional Center for Data Science + APER
+  - role: Data Scientist
+    institution: Interinstitutional Center for Data Science (CID), with APER
     location: Buenos Aires, Argentina
     period: Mar 2024 - Aug 2024
     bullets:
-      - Product re-ranking service for online stores.
-      - NLP + ML signals combined with traditional ranking methods.
-
-teaching_and_service:
-  - role: JTP-equivalent Teaching Support
-    institution: FCEN-UBA
-    period: Mar 2024 - Jul 2024
-    bullets:
-      - Notebook infrastructure and computational modeling material for Simulations of Economic Models.
-
-  - role: Undergraduate Teaching Assistant - Physics II
-    institution: Engineering School, UNLP
-    period: Oct 2022 - May 2024
-    bullets:
-      - Teaching support in introductory electromagnetism.
-
-  - role: Undergraduate Teaching Assistant - Experimental Physics I and IV
-    institution: Exact Sciences, UNLP
-    period: Mar 2022 - Mar 2024
-    bullets:
-      - Laboratory support and applied experimental methods.
-
-  - role: Institutional Service
-    institution: Universidad Nacional de La Plata
-    period: 2020 - 2023
-    bullets:
-      - Student member in professor-position advisory committee (2023).
-      - Member, curriculum-change committee (Physics, 2020 - 2022).
-
-funded_projects_and_grants:
-  - period: Jan 2025
-    title: YSI funding
-    details: Funding for participation in workshop at Scuola Superiore Sant'Anna (Pisa).
-
-  - period: Jan 2023
-    title: LACONEU support
-    details: Funding for participation in the Latin American Summer School in Computational Neuroscience.
+      - Product re-ranking service for online stores combining NLP, machine learning and classical ranking methods.
 
 publications:
   - year: 2026
-    citation: "Kejsefman, I.; Valens Upegui, M.; Caputo Bugallo, A.; Castro, R. Nowcasting de la actividad económica en contextos de alta volatilidad: uso de transacciones bancarias para la gestión económica provincial basada en evidencia."
-    venue: "Submitted / under review (peer review in progress)"
+    kind: Preprint
+    citation: "<strong>Caputo Bugallo, A.</strong>; Kejsefman, I.; Castro, R. United We Stand: An Emergent Wage Phillips Curve from Collective Bargaining in an Agent-Based Goodwin Model."
+    venue: "arXiv preprint"
+    status: "Coming soon"
+
+  - year: 2027
+    kind: Journal article
+    citation: "Kejsefman, I.; <strong>Caputo Bugallo, A.</strong>; Valens Upegui, M.; Castro, R. Nowcasting de la actividad económica en contextos de alta volatilidad: uso de transacciones bancarias para la gestión económica subnacional basada en evidencia."
+    venue: "Estudios Económicos, vol. 44, no. 88"
+    status: "Accepted, in press"
+
+  - year: 2026
+    kind: Conference paper
+    citation: "<strong>Caputo Bugallo, A.</strong>; Castro, R. A Differentiable and Interpretable Multiscale Parameter Mapping Methodology for Sparse ODE Surrogates of Agent-Based Models."
+    venue: "Proceedings of the 2026 Winter Simulation Conference (WSC), Glasgow"
+    status: "Accepted"
+
+  - year: 2026
+    kind: Conference paper
+    citation: "Kejsefman, I.; <strong>Caputo Bugallo, A.</strong>; Valens Upegui, M.; Castro, R. PulsoPBA: A Production System for Economic Activity Nowcasting with Neural Networks and Banking Data."
+    venue: "Argentine Symposium on Artificial Intelligence and Data Science (ASAID), 55th JAIIO, Buenos Aires"
+    status: "Accepted"
 
   - year: 2025
-    citation: "Carreira-Munich, T.; Caputo Bugallo, A.; Szabo, C.; Castro, R. Complex Adaptive Systems Simulation Modeling: A Decade's Overview."
-    venue: "Simulation: Transactions of the Society for Modeling and Simulation International (in press)"
+    kind: Journal article
+    citation: "Carreira-Munich, T.; <strong>Caputo Bugallo, A.</strong>; Szabo, C.; Castro, R. Complex Adaptive Systems Simulation Modeling: A Decade's Overview (2014-2023)."
+    venue: "SIMULATION: Transactions of the Society for Modeling and Simulation International"
+    status: "In press"
 
 conferences:
+  - period: Jan 2027
+    type: Poster (accepted)
+    title: "Learning Interpretable Macroscopic Laws for Agent-Based Dynamics on Networks"
+    venue: NetSci-X 2027, Hong Kong
+
+  - period: Jan 2027
+    type: Tutorial (accepted)
+    title: "Learning Equations for Agent-Based Dynamics on Networks: A Hands-on SINDy Tutorial"
+    venue: NetSci-X 2027 School, Hong Kong
+
+  - period: Nov 2026
+    type: Talk
+    title: "PulsoPBA: Nowcasting de actividad económica en tiempo real con Python y redes neuronales"
+    venue: PyDay La Plata
+
+  - period: Oct 2026
+    type: Poster
+    title: "From micro rules to macro laws: a differentiable and interpretable bridge for agent-based models"
+    venue: Workshop on Interdisciplinary Complex Systems, Physics Department (UBA) and University of San Andrés, Buenos Aires
+
+  - period: Aug 2026
+    type: Talk
+    title: "PulsoPBA: a production system for economic activity nowcasting with neural networks and banking data"
+    venue: ASAID, 55th JAIIO, Buenos Aires
+
+  - period: Aug 2026
+    type: Short talk
+    title: "Learning macroscopic differential equations from micro parameters: application to agent-based models"
+    venue: 8th Computer Science Research Day, UBA
+
   - period: Oct 2025
     type: Talk
     title: "Emergent wage Phillips curve in networks with local memory: an agent-based approach"
-    venue: Workshop Interdisciplinario en Econometria y Redes Complejas (IIEP-UBA-CONICET), Buenos Aires
+    venue: Interdisciplinary Workshop on Econometrics and Complex Networks (IIEP, UBA-CONICET), Buenos Aires
 
   - period: Aug 2025
-    type: Poster
-    title: Unsupervised Classification and Explainability of Agent Based Simulation Models
-    venue: 7mo Encuentro del Dia de la Investigacion en Ciencias de la Computacion, UBA
+    type: Short talk and poster
+    title: "Unsupervised classification and explainability of agent-based simulation models"
+    venue: 7th Computer Science Research Day, UBA
 
   - period: Aug 2025
     type: Poster
     title: "United We Stand: The Role of Information Locality in Collective Wage Bargaining via Agent-Based Models"
-    venue: 38a Escuela de Ciencias Informaticas (ECI), UBA
+    venue: 38th Computer Science School (ECI), UBA
 
   - period: Jan 2025
-    type: Talk + Abstract
+    type: Talk
     title: "United we Stand: The role of information locality in collective wage bargaining via Agent Based models"
-    venue: Agent Based Models for Political Economy workshop, Scuola Superiore Sant'Anna, Pisa
+    venue: Workshop on Agent-Based Models for Political Economy, Scuola Superiore Sant'Anna, Pisa
+
+teaching_and_service:
+  - role: Teaching Assistant (JTP) - Computational Statistics
+    institution: Department of Computer Science, FCEN-UBA
+    period: Aug 2026 - Present
+
+  - role: Teaching Assistant (JTP) - Data Laboratory
+    institution: FCEN-UBA
+    period: Mar 2025 - Jul 2026
+
+  - role: Teaching Support (JTP-equivalent) - Simulation of Economic Models
+    institution: FCEN-UBA
+    period: Mar 2024 - Jul 2024
+
+  - role: Undergraduate Teaching Assistant - Physics II; Experimental Physics I and IV
+    institution: Schools of Engineering and Exact Sciences, UNLP
+    period: Mar 2022 - May 2024
+
+  - role: Academic Service
+    institution: "UNLP | Physics curriculum reform committee (2020 - 2022); student member of a faculty hiring committee (2023)"
+    period: 2020 - 2023
+
+funded_projects_and_grants:
+  - period: Jan 2025
+    title: Young Scholars Initiative (YSI) grant
+    details: Travel and stay for the Workshop on Agent-Based Models for Political Economy, Scuola Superiore Sant'Anna, Pisa, where I gave a talk.
+
+  - period: Jan 2023
+    title: LACONEU travel grant
+    details: Attendance at the Latin American Summer School in Computational Neuroscience, Valparaíso, Chile.
 
 courses_and_schools:
-  - title: Modeling and Analysis of Complex Systems
+  - title: "ECONOLab: Introduction to Modeling and Simulation of Core Topics in Economics"
     host: ICC-UBA
-    period: Jul 2024
-    duration: Course
+    period: Sep - Dec 2025
+    duration: 45 h
 
-  - title: Simulations of Economic Models
+  - title: Workshop on Agent-Based Models for Political Economy
+    host: Scuola Superiore Sant'Anna, Pisa
+    period: Jan 2025
+    duration: Workshop
+
+  - title: Modeling and Analysis of Complex Systems (C. Szabo, University of Adelaide)
+    host: 37th ECI, UBA
+    period: Jul 2024
+    duration: 15 h
+
+  - title: Simulation of Economic Models (R. Castro)
     host: ICC-UBA
     period: Mar - Jul 2024
-    duration: Course
+    duration: 45 h
 
-  - title: Latin American Summer School in Computational Neuroscience (LACONEU)
-    host: LACONEU
+  - title: Latin American Summer School in Computational Neuroscience (LACONEU 2023)
+    host: University of Valparaíso, Chile
     period: Jan 2023
-    duration: Summer School
+    duration: Two weeks
 
-  - title: Agent-Based Modelling and Simulation for Macroeconomic Systems
-    host: ECI
+  - title: Agent-Based Modelling and Simulation for Macroeconomic Systems (A. Roventini, Sant'Anna)
+    host: ECI, UBA
     period: Jul 2022
-    duration: Course
+    duration: 15 h
 
   - title: Introduction to Neural Networks in Python
     host: Training course
     period: May 2022
-    duration: Course
+    duration: 15 h
 
   - title: Social Network Analysis - Computational Socio-economics Track
-    host: ECI
+    host: ECI, UBA
     period: Jul 2021
-    duration: Course
+    duration: 15 h
 
 awards:
   - period: 2024
-    title: Distincion Joaquin V. Gonzalez
-    details: Municipality of La Plata; awarded among top graduates from each faculty.
+    title: Joaquín V. González Award
+    details: City of La Plata, given to the top graduates of each school of the National University of La Plata.
 
 languages:
   - name: Spanish
     level: Native
   - name: English
-    level: Advanced (B2, First Certificate)
+    level: Advanced (Cambridge First Certificate, B2)

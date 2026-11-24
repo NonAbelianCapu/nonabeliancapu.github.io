@@ -1,0 +1,146 @@
+% Short academic CV in English, linked from the website (cv/CV_Caputo_Bugallo_EN.pdf).
+% Started from the NetSciX 2027 travel-support CV (Oct 2026); updated Nov 2026.
+% Compile with pdfLaTeX: latexmk -pdf CV_Caputo_Bugallo_EN.tex
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=17mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[tracking=true]{microtype}
+\usepackage{xcolor}
+\definecolor{accent}{RGB}{31,45,61}
+\definecolor{muted}{RGB}{110,110,110}
+\definecolor{bodytext}{RGB}{38,38,38}
+\usepackage{enumitem}
+\usepackage[colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={Agustín Caputo Bugallo - CV},pdfauthor={Agustín Caputo Bugallo}]{hyperref}
+\usepackage{titlesec}
+\definecolor{rulecol}{RGB}{184,115,51}
+\titleformat{\section}{\color{accent}\bfseries\lsstyle}{}{0pt}{\MakeUppercase}[\vspace{-0.9ex}{\color{rulecol}\rule{\linewidth}{0.6pt}}]
+\titlespacing*{\section}{0pt}{2.0ex}{1.0ex}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.1em,itemsep=1pt,topsep=2pt,label={\color{accent}\small\textbullet}}
+% \entry{role}{place}{dates}
+\newcommand{\entry}[3]{{\bfseries #1}\hfill{\color{muted}\small #3}\par{\color{accent}\itshape #2}\par}
+\newcommand{\sub}[1]{\smallskip{\color{accent}\bfseries #1}\par}
+\newcommand{\status}[1]{{\color{accent}\itshape #1}}
+\newcommand{\me}{\textbf{A.~Caputo Bugallo}}
+
+\begin{document}
+\color{bodytext}
+
+{\fontsize{24}{28}\selectfont\bfseries\color{accent} Agustín Caputo Bugallo}\par
+\vspace{3pt}
+{\large PhD student in Computer Science \textperiodcentered{} University of Buenos Aires and CONICET, Argentina}\par
+\vspace{3pt}
+{\color{muted}\href{mailto:abugallo@dc.uba.ar}{abugallo@dc.uba.ar} \quad\textbar\quad \href{https://nonabeliancapu.github.io}{nonabeliancapu.github.io}}\par
+\vspace{4pt}
+\textbf{Research interests:} agent-based modeling, dynamics on complex networks, interpretable machine learning, computational economics.
+
+\section{Education}
+
+\entry{PhD in Computer Science (applied to socio-economic systems)}{University of Buenos Aires}{Aug 2024 -- present}
+Thesis: \emph{Simulation-based validation of complex hybrid models, with application to the control of networked agents in socio-economic systems}. Advisor: Prof.~Rodrigo Castro. Co-advisor: Prof.~Sebastián Uchitel.
+
+\medskip
+\entry{Licenciatura in Physics (five-year degree)}{National University of La Plata}{Mar 2016 -- Nov 2023}
+GPA 9.40/10. Thesis: \emph{Characterization of Neuronal Systems Using Short-Time Statistics}. Advisor: Tomás Grigera.
+
+\section{Research experience}
+
+\entry{CONICET doctoral fellow}{Institute of Computer Science (ICC, UBA-CONICET)}{Aug 2024 -- present}
+Discrete Event Simulation Lab (SEDLab), Buenos Aires.
+\begin{itemize}
+  \item Machine learning methods to build interpretable surrogate models of agent-based simulations.
+  \item Calibration of agent-based models with noise-robust black-box optimization.
+  \item Nowcasting of weekly economic indicators with machine learning on mixed-frequency data.
+\end{itemize}
+
+\medskip
+\entry{Undergraduate research fellow}{CIN scientific vocation fellowship, National University of La Plata}{Sep -- Dec 2023}
+Critical dynamics and correlation scales in simple models of neural networks.
+
+\medskip
+\entry{Research assistant}{CEMSC3, National University of San Martín}{Mar 2022 -- Aug 2023}
+Data analysis for the NIH project \emph{Reading and Controlling the Neural Codes of the Brain}: dimensionality reduction and machine learning on neural recordings, and metrics comparing agent-based models with experimental data through spatial and temporal correlations.
+
+\section{Publications}
+
+\sub{Preprints}
+\begin{itemize}
+  \item \me, I.~Kejsefman, R.~Castro. United we stand: an emergent wage Phillips curve from collective bargaining in an agent-based Goodwin model. \status{arXiv preprint, forthcoming.}
+\end{itemize}
+
+\sub{Conference papers}
+\begin{itemize}
+  \item \me, R.~Castro. A differentiable and interpretable multiscale parameter mapping methodology for sparse ODE surrogates of agent-based models. \emph{Proc.\ 2026 Winter Simulation Conference (WSC)}, Glasgow, Dec 2026. \status{Accepted.}
+  \item I.~Kejsefman, \me, M.~Valens Upegui, R.~Castro. PulsoPBA: a production system for economic activity nowcasting with neural networks and banking data. \emph{Proc.\ Argentine Symposium on Artificial Intelligence and Data Science (ASAID), 55th Argentine Conference on Informatics (JAIIO)}, Buenos Aires, Aug 2026. \status{Accepted.}
+\end{itemize}
+
+\sub{Journal articles}
+\begin{itemize}
+  \item T.~Carreira-Munich, \me, C.~Szabo, R.~Castro. Complex adaptive systems simulation modeling: a decade's overview (2014--2023). \emph{SIMULATION: Transactions of the Society for Modeling and Simulation International}, 2025. \status{In press.}
+  \item I.~Kejsefman, \me, M.~Valens Upegui, R.~Castro. Nowcasting economic activity under high volatility: bank transactions for evidence-based subnational economic management (in Spanish). \emph{Estudios Económicos} 44(88), 2027. \status{Accepted, in press.}
+\end{itemize}
+
+\section{Selected talks and posters}
+
+\begin{itemize}
+  \item \emph{Learning interpretable macroscopic laws for agent-based dynamics on networks.} Poster, NetSci-X 2027, Hong Kong, Jan 2027. \status{Accepted.}
+  \item \emph{Learning equations for agent-based dynamics on networks: a hands-on SINDy tutorial.} Tutorial, NetSci-X 2027 School, Hong Kong, Jan 2027. \status{Accepted.}
+  \item \emph{PulsoPBA: real-time nowcasting of economic activity with Python and neural networks.} Talk, PyDay La Plata, Nov 2026.
+  \item \emph{From micro rules to macro laws: a differentiable and interpretable bridge for agent-based models.} Poster, Workshop on Interdisciplinary Complex Systems, Physics Department (UBA) and University of San Andrés, Buenos Aires, Oct 2026.
+  \item \emph{PulsoPBA: a production system for economic activity nowcasting with neural networks and banking data.} Talk, ASAID, 55th JAIIO, Buenos Aires, Aug 2026.
+  \item \emph{Learning macroscopic differential equations from micro parameters: application to agent-based models.} Short talk, 8th Computer Science Research Day, UBA, Aug 2026.
+  \item \emph{Emergent wage Phillips curve in networks with local memory: an agent-based approach.} Talk, Interdisciplinary Workshop on Econometrics and Complex Networks, Interdisciplinary Institute of Political Economy (IIEP, UBA-CONICET), Buenos Aires, Oct 2025.
+  \item \emph{Unsupervised classification and explainability of agent-based simulation models.} Short talk and poster, 7th Computer Science Research Day, UBA, Aug 2025.
+  \item \emph{United we stand: the role of information locality in collective wage bargaining via agent-based models.} Talk, Workshop on Agent-Based Models for Political Economy, Scuola Superiore Sant'Anna, Pisa, Jan 2025. Poster, 38th Computer Science School (ECI), UBA, Aug 2025.
+\end{itemize}
+
+\section{Teaching}
+
+\begin{itemize}
+  \item Teaching assistant (JTP), Computational Statistics, Department of Computer Science, School of Exact and Natural Sciences, UBA, Aug 2026 -- present.
+  \item Teaching assistant (JTP), Data Laboratory (undergraduate data science course), School of Exact and Natural Sciences, UBA, Mar 2025 -- Jul 2026.
+  \item Teaching support (teaching-assistant level), Simulation of Economic Models: notebooks and computational modeling material, UBA, Mar -- Jul 2024.
+  \item Undergraduate teaching assistant, Physics II (School of Engineering) and Experimental Physics I and IV (School of Exact Sciences), National University of La Plata, 2022 -- 2024.
+\end{itemize}
+
+\section{Industry and technology transfer}
+
+\entry{Data scientist (technology transfer)}{Bank of the Province of Buenos Aires, with ICC (UBA-CONICET)}{Aug 2025 -- present}
+Built and maintain \emph{PulsoPBA}, the bank's AI-based indicator of economic activity in the Province of Buenos Aires, which combines more than 1,200 daily banking variables with official statistics and is published monthly: \href{https://www.bancoprovincia.com.ar/web/pulso_pba}{\mbox{bancoprovincia.com.ar/web/pulso\_pba}}. Currently extending it to sector-level indicators.
+
+\medskip
+\entry{Data scientist}{Interinstitutional Center for Data Science (CID), with APER}{Mar -- Aug 2024}
+Product re-ranking service for online stores combining NLP, machine learning and classical ranking methods.
+
+\section{Grants and awards}
+
+\begin{itemize}
+  \item Young Scholars Initiative (YSI) grant covering travel and stay for the Workshop on Agent-Based Models for Political Economy, Scuola Superiore Sant'Anna, Pisa, Jan 2025, where I presented a talk.
+  \item Travel grant to attend LACONEU 2023, Valparaíso, Chile, 2023.
+  \item Joaquín V.~González Award, City of La Plata, given to the top graduates of each school of the National University of La Plata, 2024.
+\end{itemize}
+
+\section{Schools, workshops and courses}
+
+\begin{itemize}
+  \item Workshop on Agent-Based Models for Political Economy, Scuola Superiore Sant'Anna, Pisa, Italy, Jan 2025.
+  \item LACONEU 2023, Latin American Summer School in Computational Neuroscience, University of Valparaíso, Chile (two weeks), 2023.
+  \item Modeling and Analysis of Complex Systems (C.~Szabo, University of Adelaide), 2024; Agent-Based Modelling and Simulation for Macroeconomic Systems (A.~Roventini, Scuola Superiore Sant'Anna), 2022; Social Network Analysis, 2021.
+\end{itemize}
+
+\section{Academic service}
+
+\begin{itemize}
+  \item Student member of a faculty hiring committee, National University of La Plata, 2023.
+  \item Member of the committee for the reform of the Physics curriculum, National University of La Plata, 2020 -- 2022.
+\end{itemize}
+
+\section{Languages}
+
+Spanish (native) \textperiodcentered{} English (advanced; Cambridge First Certificate, B2)
+
+\end{document}

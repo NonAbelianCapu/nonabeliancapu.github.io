@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>{{ page.title | escape }} | {{ site.data.portfolio.name }}</title>
     <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 | escape }}" />
+    <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}" />
   </head>
   <body class="post-page">
@@ -22,10 +23,11 @@
       <div class="topbar-inner">
         <a class="brand" href="{{ '/index.html#top' | relative_url }}">{{ p.name }}</a>
         <ul class="menu">
-          <li><a href="{{ '/index.html#about' | relative_url }}">About</a></li>
-          <li><a href="{{ '/index.html#projects' | relative_url }}" class="is-active">Project Log</a></li>
+          <li><a href="{{ '/index.html#news' | relative_url }}">Recent Activity</a></li>
           <li><a href="{{ '/index.html#research' | relative_url }}">Research</a></li>
-          <li><a href="{{ '/resume.html' | relative_url }}">Resume</a></li>
+          <li><a href="{{ '/index.html#papers' | relative_url }}">Papers</a></li>
+          <li><a href="{{ '/index.html#projects' | relative_url }}" class="is-active">Projects</a></li>
+          <li><a href="{{ '/resume.html' | relative_url }}">CV</a></li>
         </ul>
       </div>
     </nav>
@@ -51,10 +53,10 @@
           {% if page.repo or page.external_url %}
             <div class="link-row">
               {% if page.repo %}
-                <a href="{{ page.repo }}" target="_blank" rel="noreferrer">[ {{ page.repo_label | default: 'Repository' }} ]</a>
+                <a href="{{ page.repo }}" target="_blank" rel="noreferrer">{{ page.repo_label | default: 'Repository' }} ↗</a>
               {% endif %}
               {% if page.external_url %}
-                <a href="{{ page.external_url }}" target="_blank" rel="noreferrer">[ {{ page.external_label | default: 'Project Website' }} ]</a>
+                <a href="{{ page.external_url }}" target="_blank" rel="noreferrer">{{ page.external_label | default: 'Project website' }} ↗</a>
               {% endif %}
             </div>
           {% endif %}
@@ -71,19 +73,19 @@
         </section>
 
         <footer class="post-end">
-          <a href="{{ '/index.html#projects' | relative_url }}">[ Back to project log ]</a>
+          <a href="{{ '/index.html#projects' | relative_url }}">← All projects</a>
           {% if page.previous.url %}
-            <a href="{{ page.previous.url | relative_url }}">[ Newer: {{ page.previous.title }} ]</a>
+            <a href="{{ page.previous.url | relative_url }}">Newer: {{ page.previous.title }}</a>
           {% endif %}
           {% if page.next.url %}
-            <a href="{{ page.next.url | relative_url }}">[ Older: {{ page.next.title }} ]</a>
+            <a href="{{ page.next.url | relative_url }}">Older: {{ page.next.title }}</a>
           {% endif %}
         </footer>
       </article>
 
       <footer class="site-footer">
-        <p>{{ 'now' | date: '%Y' }} {{ p.name }}</p>
-        <p>Post layout rendered locally from custom templates.</p>
+        <p>© {{ 'now' | date: '%Y' }} {{ p.name }}</p>
+        <p><a href="{{ '/resume.html' | relative_url }}">CV</a></p>
       </footer>
     </main>
   </body>

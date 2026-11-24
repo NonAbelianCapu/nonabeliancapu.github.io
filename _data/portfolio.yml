@@ -1,16 +1,19 @@
-name: Agustin Caputo Bugallo
+name: Agustín Caputo Bugallo
 role: PhD Student in Computer Science (UBA - CONICET)
 email: abugallo@dc.uba.ar
 avatar: /avatar.jpg
 location: Buenos Aires, Argentina
+cv_pdf: /cv/CV_Caputo_Bugallo_EN.pdf
+tagline: PhD student at UBA-CONICET working on agent-based models of economic systems, interpretable surrogates of simulations and nowcasting with high-frequency data.
 summary:
-  - I am part of <a href="https://sedlab.dc.uba.ar/" target="_blank" rel="noreferrer">SEDLab (Discrete Event Simulation Laboratory)</a>.
-  - Researcher and data scientist focused on computational modeling for socio-economic systems, agent-based simulation, machine learning, and robust optimization.
-  - I work at the intersection of formal modeling, simulation validation, and data-driven inference for complex adaptive systems.
+  - I am a CONICET doctoral fellow at the Institute of Computer Science (ICC, UBA-CONICET), working in <a href="https://sedlab.dc.uba.ar/" target="_blank" rel="noreferrer">SEDLab</a>, the Discrete Event Simulation Lab, with Rodrigo Castro and Sebastián Uchitel.
+  - I build agent-based models of economic systems and the tools to study them, such as interpretable surrogates learned from simulations, calibration methods that tolerate noise, and machine learning on high-frequency data. I trained as a physicist at the National University of La Plata.
 
 links:
   - label: Email
     url: mailto:abugallo@dc.uba.ar
+  - label: CV (PDF)
+    url: /cv/CV_Caputo_Bugallo_EN.pdf
   - label: GitHub
     url: https://github.com/NonAbelianCapu
   - label: LinkedIn
@@ -20,15 +23,29 @@ links:
   - label: SEDLab
     url: https://sedlab.dc.uba.ar/
 
-research:
-  - title: PhD Fellow Research (CONICET - ICC, UBA)
-    institution: University of Buenos Aires
-    period: August 2024 - Present
-    focus: Formal languages and simulation tools for agent control in socio-economic systems.
-    highlights:
-      - "I am part of SEDLab (Discrete Event Simulation Laboratory): https://sedlab.dc.uba.ar/."
-      - "Thesis: Simulation-based validation for complex hybrid models: an application to controlling mobile agents in networks."
-      - "Advisor: Rodrigo Castro. Co-advisor: Sebastian Uchitel."
-      - "Current research lines: nowcasting with mixed-frequency data and calibration of agent-based models."
+news:
+  - date: Jan 2027
+    text: "Poster and a hands-on SINDy tutorial at <a href=\"https://netscix2027.github.io/\" target=\"_blank\" rel=\"noreferrer\">NetSci-X 2027</a> in Hong Kong: <em>Learning Interpretable Macroscopic Laws for Agent-Based Dynamics on Networks</em>."
+  - date: Dec 2026
+    text: "Our paper on sparse ODE surrogates of agent-based models will be presented at the <a href=\"https://meetings.informs.org/wordpress/wsc2026/\" target=\"_blank\" rel=\"noreferrer\">2026 Winter Simulation Conference</a> in Glasgow."
+  - date: Nov 2026
+    text: "Talk at PyDay La Plata on <a href=\"https://www.bancoprovincia.com.ar/web/pulso_pba\" target=\"_blank\" rel=\"noreferrer\">PulsoPBA</a>, real-time nowcasting of economic activity with Python and neural networks."
+  - date: Aug 2026
+    text: "Started as teaching assistant (JTP) for Computational Statistics at the Department of Computer Science, UBA."
+  - date: Aug 2026
+    text: "Presented PulsoPBA at ASAID, 55th JAIIO."
+  - date: May 2026
+    text: "Paper on nowcasting with bank transactions accepted in <a href=\"https://revistas.uns.edu.ar/ee\" target=\"_blank\" rel=\"noreferrer\"><em>Estudios Económicos</em></a>."
 
-footer: Built with Jekyll and custom data-driven templates.
+research:
+  - title: Interpretable surrogates of agent-based models
+    focus: "Agent-based models are expensive to run and hard to read. I learn sparse differential equations (SINDy) whose coefficients depend on the model's micro parameters, so the macro dynamics can be read off, differentiated and calibrated."
+    highlights:
+      - "Paper at the 2026 Winter Simulation Conference; poster and tutorial at NetSci-X 2027."
+
+  - title: Nowcasting with high-frequency data
+    focus: "Machine-learning nowcasts of economic activity from more than 1,200 daily banking variables and official statistics, in production at Banco Provincia as PulsoPBA."
+    highlights:
+      - "Papers in <em>Estudios Económicos</em> and at ASAID (55th JAIIO)."
+
+footer: Built with Jekyll from data files.
